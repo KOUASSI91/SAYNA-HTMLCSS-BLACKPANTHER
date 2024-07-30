@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/panthera');
+@import url('https://fonts.cdnfonts.com/css/beyno');
+@import url('https://fonts.cdnfonts.com/css/wakanda-forever');
+
+:root{
+    --white-color: #FFFFFF;
+    --pink-color0: #F2CEF2;
+    --pink-color1: #9E91B7;
+    --pink-color2: #DF99F2;
+    --blue-color0: #3D2DA6;
+    --blue-color1: #07338C;
+    --blue-color2: #021740;
+    --whitet-color: hsla(0, 0%, 100%, 0.4);
+    --whited-color: hsla(0, 0%, 100%, 0.9);
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'panthera';
+    color: var(--pink-color1);
+}
+
+h2{
+    font-family: 'beyno';
+    color: var(--pink-color1);
+}
+/*Style de la première section black-panther*/ 
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    
+
+}
+ul{
+    display: flex;
+    gap: 100px;  
+    font-family: 'beyno';
+   
+
+}
+
+.type-menu ul li a {
+    font-size: 20px;
+    text-decoration: none; /* Ajustez la taille des caractères selon vos besoins */
+}
+.type-menu ul li a:hover {
+    text-decoration: underline;
+}
+.type-menu ul li a.active {
+    text-decoration: underline;
+    text-decoration-color: var(--pink-color1);
+    color: var(--pink-color1);
+}
+#menu .icon:hover{
+    filter: invert(92%) sepia(68%) saturate(6551%) hue-rotate(289deg) brightness(90%) contrast(123%);
+
+ }
+nav ul a{
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    
+    
+}
+ul{
+    list-style-type: none;
+}
+body{
+    background-image: url(./Illustrations-Logo/All_pages/arrière_plan.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        margin-left: 100px;
+       
+    }
+
+/*Style de la première section wakanda forever*/
+#forever {
+   background-image: url(./Illustrations-Logo/Wakanda/Panther1.jpg);
+   background-size: cover;
+   height: 1000px;
+   opacity: 0.7;
+}
+#forever .container{
+    position: relative;
+    bottom: -300px;
+    right: -200px;
+    
+  
+}
+#forever .titre{
+    font-family: 'Beyno';
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+#forever .sous-titre{
+    font-family: 'Wakanda forever';
+    font-size: 30px;
+    letter-spacing: 6px;
+}
+#forever .situation{
+    font-family: "Cantarell";
+    color: white;
+    width: 22%;
+    font-size: 12px;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+
+/*Style de la deuxième section histoire*/
+#histoire .opacity{
+    opacity: 0.3;
+    position: absolute;
+}
+#histoire .container{
+    display: flex;
+    margin-top: 150px;
+
+}
+#histoire .titre{
+    font-family: 'Beyno';
+    color: var(--pink-color1);
+    margin-bottom: 20px;
+}
+#histoire .description{
+    font-family: 'Cantarell';
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    width: 85%;
+    margin-bottom: 20px;
+}
+#histoire .citation{
+    font-family: 'Cantarell';
+    color: white;
+    text-align: justify;
+    font-size: 12px;
+    width: 85%;
+    margin-bottom: 20px;
+}
+#histoire .gauche{
+    width: 3000px;
+
+}
+#histoire .youtube{
+    position: relative;
+    top: -200px;
+    right: -270px;
+}
+
+
+
+
+
+
+    /*Style de la cinquième section footer*/
+#footer{
+    background-image: url(./Illustrations-Logo/All_pages/back_footer.png);
+}
+#footer .container{
+    display: flex;
+    padding-top: 150px;
+    margin-left: 350px;
+    padding-bottom: 70px;
+}
+#footer .petit{
+    position: relative;
+    top: -200px;
+    left: -250px
+}
+
+#footer .sociaux{
+    margin-left: 500px;
+    
+}
+#footer .sociaux a img {
+    margin-right: 30px; 
+}
+#footer .retrouvez{
+    margin-left: 540px;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 28%;
+    margin-bottom: 30px;
+}
+#footer .copyright{
+    margin-top: 200px;
+    color: #FFFFFF;
+    font-family: 'Cantarell';
+    display: flex;
+}
+#footer .texte{
+    color: white;
+    text-transform: capitalize;
+}
+#footer .copyright ul li{
+    font-family: 'Cantarell';
+}
+#footer .puce::before {
+    content: '•'; /* Symbole de la puce */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 40px; /* Taille de la puce */
+    line-height: 0.6; /* Assurez-vous que la puce est bien alignée avec le texte */
+    color: var(--pink-color0); /* Couleur de la puce */
+}
+#footer .puce {
+    position: relative;
+    padding-left: 10px; /* Espace pour la puce */
+}
+#footer .pages{
+    font-family: 'Cantarell';
+    font-size: 22px;
+    letter-spacing: 28%;
+    margin-bottom: 30px;
+}
+#footer .apropos{
+    font-family: 'Cantarell';
+    margin-bottom: 15px;
+}
+#footer img:hover{
+    transform: scale(1.1);
+}
+#footer .petit:hover{
+    filter: invert(92%) sepia(68%) saturate(6551%) hue-rotate(289deg) brightness(90%) contrast(123%);
+
+ }
+ #footer .texte a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Cantarell';
+}
+#footer .texte a:hover {
+    text-decoration: underline;
+}
